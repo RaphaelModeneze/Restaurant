@@ -1,0 +1,40 @@
+﻿<Page x:Class="Restaurant.Views.MainMenuView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Restaurant.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainMenuView">
+
+    <DockPanel LastChildFill="True" >
+
+        <Menu DockPanel.Dock="Top" HorizontalAlignment="Stretch" VerticalAlignment="Top" Padding="3, 5" FontSize="16" >
+            <Label x:Name="SearchLbl" Content="Search " HorizontalAlignment="Left" VerticalAlignment="Top" />
+            <TextBox x:Name="SearchBoxTxt" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.RowSpan="2" TextChanged="Search_TextChanged"/>
+        </Menu>
+
+        <Grid DockPanel.Dock="Left" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"  />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Frame x:Name="ContentL" Source="ItemListView.xaml" />
+            </Grid>
+
+            <GridSplitter Name="gridSplitter" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Stretch" ResizeDirection="Columns" Width="5" Height="Auto" Background="#FF333333" BorderThickness="0" />
+
+            <Grid Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Frame x:Name="ContentR" Source="ItemView.xaml" />
+            </Grid>
+
+        </Grid>
+
+    </DockPanel>
+</Page>
+    

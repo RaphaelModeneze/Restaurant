@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "KhZK+oJDzKhdvTlvSvip8RV8veqIWEJf7mQUNT+KlnN25XPG/sUXAnuqmHbZEmv7Jh/0f6jK8hVbwE8PVl5TcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Git\\Restaurant\\DAL\\DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rapha\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.17\\microsoft.data.sqlite.core.5.0.17.nupkg.sha512",
+    "C:\\Users\\rapha\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "C:\\Users\\rapha\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.116\\stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
+    "C:\\Users\\rapha\\.nuget\\packages\\system.data.sqlite.core\\1.0.116\\system.data.sqlite.core.1.0.116.nupkg.sha512",
+    "C:\\Users\\rapha\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,11 @@
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\Restaurant.csproj.AssemblyReference.cache
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\UserControls\ItemListUserControl.g.cs
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\UserControls\ItemUserControl.g.cs
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\Views\ItemListView.g.cs
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\Views\ItemView.g.cs
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\Views\MainMenuView.g.cs
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\App.g.cs
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\Restaurant_MarkupCompile.cache
+C:\Git\Restaurant\Restaurant\obj\Debug\net5.0-windows\Restaurant_MarkupCompile.lref

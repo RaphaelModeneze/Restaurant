@@ -2,10 +2,12 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Restaurant"
+             xmlns:uc="clr-namespace:Restaurant.ViewModels"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <Style x:Key="DatagridColumnElementStyle" TargetType="TextBlock">
             <Setter Property="Margin" Value="5" />
         </Style>
+        <!--<uc:ViewModelLocator x:Key="ViewModelLocator"/>-->
     </Application.Resources>
 </Application>

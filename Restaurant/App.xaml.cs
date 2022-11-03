@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System.Windows;
 
 namespace Restaurant
@@ -13,5 +8,26 @@ namespace Restaurant
     /// </summary>
     public partial class App : Application
     {
+        private ServiceProvider serviceProvider;
+
+        public App()
+        {
+            ServiceCollection services = new ServiceCollection();
+            ConfigureServices(services);
+            serviceProvider = services.BuildServiceProvider();
+        }
+
+        private void ConfigureServices(ServiceCollection services)
+        {
+
+            services.AddSingleton<MainWindow>();
+        }
+
+        private void OnStartup(object sender, StartupEventArgs e)
+        {
+            IocKernel.Initialize(new IocConfiguration());
+
+            base.OnStartup(e);
+        }
     }
 }

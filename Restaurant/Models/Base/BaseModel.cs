@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace Restaurant.ViewModels.Base
 {
-    public abstract class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 

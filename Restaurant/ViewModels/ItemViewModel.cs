@@ -1,18 +1,29 @@
-﻿using Restaurant.ViewModels.Base;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Restaurant.Models.Services.Interface;
+using System.Windows.Input;
 
 namespace Restaurant.ViewModels
 {
-    public class ItemViewModel : BaseViewModel
+    public class ItemViewModel
     {
+        private ICommand saveItemCommand;
 
-        public ItemViewModel()
+        public IItemDataService ItemRepository { get; }
+
+
+        public ItemViewModel(IItemDataService itemRepository)
         {
-
+            ItemRepository = itemRepository;
         }
+
+        public ICommand SaveItemCommand
+        {
+            get
+            {
+                ItemRepository.Add(new Models.Item());
+
+                return saveItemCommand;
+            }
+        }
+
     }
 }

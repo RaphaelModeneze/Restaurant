@@ -5,16 +5,16 @@ namespace DAL
 {
     public class DalHelper
     {
-        private static SQLiteConnection sqliteConnection;
+        private SQLiteConnection sqliteConnection;
         public DalHelper()
         { }
-        private static SQLiteConnection DbConnection()
+        private SQLiteConnection DbConnection()
         {
             sqliteConnection = new SQLiteConnection("Data Source=c:\\dados\\Restaurant.sqlite; Version=3;");
             sqliteConnection.Open();
             return sqliteConnection;
         }
-        public static void CreateDBSQLite()
+        public void CreateDBSQLite()
         {
             try
             {
@@ -25,7 +25,7 @@ namespace DAL
                 throw;
             }
         }
-        public static void CreateTableSQlite()
+        public void CreateTableSQlite()
         {
             try
             {
@@ -41,7 +41,7 @@ namespace DAL
             }
         }
 
-        public static DataTable GetAllItems()
+        public DataTable GetAllItems()
         {
             SQLiteDataAdapter da = null;
             DataTable dt = new DataTable();
@@ -60,7 +60,7 @@ namespace DAL
                 throw ex;
             }
         }
-        public static DataTable GetItem(string id)
+        public DataTable GetItem(string id)
         {
             SQLiteDataAdapter da = null;
             DataTable dt = new DataTable();
@@ -79,7 +79,7 @@ namespace DAL
                 throw ex;
             }
         }
-        public static void Add(string name, decimal price, bool active)
+        public void Add(string name, decimal price, bool active)
         {
             try
             {
@@ -98,7 +98,7 @@ namespace DAL
                 throw ex;
             }
         }
-        public static void Update(string id, string name, decimal price, bool active)
+        public void Update(string id, string name, decimal price, bool active)
         {
             try
             {
@@ -120,7 +120,7 @@ namespace DAL
                 throw ex;
             }
         }
-        public static void Delete(string id)
+        public void Delete(string id)
         {
             try
             {
